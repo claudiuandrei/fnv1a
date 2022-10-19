@@ -1,4 +1,4 @@
-import { assertEquals } from "./dev_deps.ts";
+import { assertEquals } from "https://deno.land/std@0.160.0/testing/asserts.ts";
 import fnv1a from "./mod.ts";
 
 Deno.test("default", () => {

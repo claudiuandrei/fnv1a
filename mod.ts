@@ -23,8 +23,9 @@ const OFFSETS: Record<Bits, bigint> = {
 
 export default function fnv1a(
 	input: string,
-	{ size = 32 }: { size?: Bits } = {}
+	options: { size?: Bits } = {}
 ): bigint {
+	const { size = 32 } = options;
 	return new TextEncoder()
 		.encode(input)
 		.reduce(
