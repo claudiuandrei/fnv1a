@@ -3,7 +3,6 @@ import { build, emptyDir } from "https://deno.land/x/dnt@0.31.0/mod.ts";
 await emptyDir("./npm");
 
 await build({
-	scriptModule: false,
 	entryPoints: ["./mod.ts"],
 	outDir: "./npm",
 	shims: {
@@ -21,12 +20,16 @@ await build({
 		version: Deno.args[0],
 		description: "FNV-1a non-cryptographic hash function.",
 		license: "MIT",
+		keywords: ["fnv1a", "hash", "hashing"],
 		repository: {
 			type: "git",
 			url: "git+https://github.com/claudiuandrei/fnv1a.git",
 		},
 		bugs: {
 			url: "https://github.com/claudiuandrei/fnv1a/issues",
+		},
+		engines: {
+			node: ">=11.0.0",
 		},
 	},
 });
