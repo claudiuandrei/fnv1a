@@ -10,7 +10,7 @@ import fnv1a from "https://deno.land/x/fnv1a/mod.ts";
 
 ## Usage Node
 
-This is a port of [@sindresorhus/fnv1a](https://github.com/sindresorhus/fnv1a), through the code is slightly by using the newer TextEncoder standard.
+This is a port of [@sindresorhus/fnv1a](https://github.com/sindresorhus/fnv1a), through the code is different slightly by using the newer TextEncoder standard.
 
 ```js
 import fnv1a from "@denox/fnv1a";
